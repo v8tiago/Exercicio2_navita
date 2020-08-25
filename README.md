@@ -1,6 +1,3 @@
-
-![Logo_Cliente](https://navita.com.br/wp-content/uploads/2018/06/navita-logo.png =250x)
-
 # Gestão de Patrimônio
 > Exercício número 2.
 
