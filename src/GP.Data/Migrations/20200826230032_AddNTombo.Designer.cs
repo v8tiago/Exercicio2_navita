@@ -4,14 +4,16 @@ using GP.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GP.Data.Migrations
 {
     [DbContext(typeof(MeuContext))]
-    partial class MeuContextModelSnapshot : ModelSnapshot
+    [Migration("20200826230032_AddNTombo")]
+    partial class AddNTombo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

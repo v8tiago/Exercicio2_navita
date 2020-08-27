@@ -20,6 +20,9 @@ namespace GP.Data.Mappings
             builder.Property( p => p.Descricao )
                 .HasColumnType( "varchar(1000)" );
 
+            builder.Property( p => p.NTombo )
+                .HasDefaultValueSql( "NEXT VALUE FOR TomboSequence" );
+
             builder.ToTable( "Patrimonios" );
         }
     }

@@ -22,6 +22,10 @@ namespace GP.App.ViewModels
         [DisplayName("Descrição")]
         [StringLength( 1000, ErrorMessage = "O campo {0} recisa ter entre {2} e {1} ", MinimumLength = 5 )]
         public string Descricao { get; set; }
+
+        [DisplayName( "Nº Tombo" )]
+        public string NTombo{ get; set; }
+
         public MarcaViewModel Marca { get; set; }
 
         [NotMapped]

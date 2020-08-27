@@ -23,6 +23,9 @@ namespace GP.Data.Context
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany( e => e.GetForeignKeys() )) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;
 
             base.OnModelCreating( modelBuilder );
+
+            modelBuilder.HasSequence<int>("TomboSequence").StartsAt(1000).IncrementsBy(1);
+
         }
 
         //public override Task<int> SaveChangesAsync (CancellationToken cancellationToken = new CancellationToken())
